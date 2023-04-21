@@ -26,7 +26,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+.DS_Store
 espn_fighters/*
+ufc_espn_merged_fights.csv
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
