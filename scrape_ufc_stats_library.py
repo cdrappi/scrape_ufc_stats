@@ -502,6 +502,11 @@ def parse_organise_fight_results_and_stats(
     fight_stats_df = combine_fighter_stats_dfs(
         fighter_a_stats_df, fighter_b_stats_df, soup
     )
+    fighter_a = fighter_a_stats_df["fighterURL"][0]
+    fighter_b = fighter_b_stats_df["fighterURL"][0]
+    fight_results_df["fightURL"] = url
+    fight_results_df["fighter1Url"] = fighter_a
+    fight_results_df["fighter2Url"] = fighter_b
     fight_stats_df["fightURL"] = url
 
     # return
